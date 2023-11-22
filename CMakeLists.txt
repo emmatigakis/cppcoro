@@ -14,7 +14,7 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 add_subdirectory(lib)
 
 enable_testing()
-if(BUILD_TESTING)
+if(CPPCORO_BUILD_TESTING)
     add_subdirectory(test)
 endif()
 
