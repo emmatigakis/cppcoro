@@ -147,7 +147,7 @@ if(WIN32)
 
 	list(APPEND libraries Ws2_32 Mswsock Synchronization)
 	if(MSVC)
-		list(APPEND compile_options /EHsc)
+		list(APPEND compile_options /EHsc /DUNICODE)
 	else()
 		list(APPEND compile_options -Wall)
    	endif()
